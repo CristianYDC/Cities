@@ -62,6 +62,10 @@ section{
     scroll-behavior: smooth;
 }
 
+.tab-menu:active{
+    touch-action: none;
+}
+
 .tab-menu, .dragging{
     scroll-behavior: unset;
     cursor: grab;
