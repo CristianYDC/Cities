@@ -16,6 +16,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
 body{
@@ -24,18 +25,18 @@ body{
 
 section{
     position: relative;
-    margin: 0 80px;
+    margin: 0px 80px;
     transition: 0.5s ease;
 }
 
 .main-container{
     position: relative;
-    margin: 0 auto;
+    padding-top: 50px;
 }
 
 .tab-nav-bar{
     position: relative;
-    margin: 65px 10px 40px 10px;
+
 }
 
 .tab-navigation{
@@ -80,7 +81,7 @@ section{
     display: inline-block;
     font-size: 1rem;
     font-weight: 400;
-    margin: 0 2px;
+    margin: 0px 2px;
     padding: 10px 20px;
     border-radius: 30px;
     cursor: pointer;
@@ -135,10 +136,14 @@ section{
     bottom: 0;
     left: auto;
     max-width: 1100px;
-    padding: 15px 50px;
+    padding: 15px 10px;
     transform: translate(25px);
     content-visibility: hidden;
     opacity: 0;
+}
+
+.row{
+    padding: 0px 50px;
 }
 
 .active{
@@ -189,7 +194,6 @@ section{
     font-size: 5em;
     font-weight: 700;
     text-align: center;
-    box-shadow: var(--box-shadow);
 }
 
 
@@ -199,11 +203,11 @@ section{
     }
 
     .tab-nav-bar {
-        margin: 65px 10px 40px 10px;
+        padding: 20px 20px;
     }
 
     .tab {
-        padding: 15px 50px;
+        padding: 15px 10px;
     }
 
     .row{
@@ -228,16 +232,29 @@ section{
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:700px) {
     .main-container {
             height: 100vh;
             overflow-x: hidden;
-            gap: 5px;
+            margin: 0 auto;
+            margin-right: 5px;
         }
 
-        .img-card>img {
+        .img-card > img {
             min-width: 90vw;
         }
 
+        .left-column {
+            display: flex;
+            justify-content: center;
+        }
+
+        .country {
+            padding-bottom: 20px;
+        }
+
+        .description{
+            padding: 0px 10px;
+        }
         
 }
